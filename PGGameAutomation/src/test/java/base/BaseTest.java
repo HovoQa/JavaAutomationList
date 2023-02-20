@@ -12,7 +12,7 @@ public class BaseTest {
 
         public WebDriver driver;
         protected HomePage homePage;
-        private String url = "https://www.delivery-club.ru";
+        private String url = "https://www.list.am";
 
         @BeforeClass
         public void setup() throws InterruptedException{
@@ -21,7 +21,6 @@ public class BaseTest {
                 driver.manage().window().maximize();
                 driver.get(url);
                 homePage = new HomePage(driver);
-                Thread.sleep(10);
         }
         @AfterClass
         public void tearDown(){
