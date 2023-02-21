@@ -18,7 +18,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test(priority = 2)
-    public void testSuccessfulLogin() {
+    public void TestSuccessfulLogin() {
         LoginPage loginPage = homePage.clickLoginBtn();
         loginPage.SetEmail();
         loginPage.SetPass();
