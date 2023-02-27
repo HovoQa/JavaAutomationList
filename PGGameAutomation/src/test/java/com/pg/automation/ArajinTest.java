@@ -1,13 +1,7 @@
 package com.pg.automation;
 
 import base.BaseTest;
-import org.example.utils.WaitHelper;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.Test;
+import utils.WaitHelper;
 
 
 public class ArajinTest extends BaseTest implements WaitHelper {

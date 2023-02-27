@@ -1,6 +1,6 @@
 package pages;
 
-import org.example.utils.WaitHelper;
+import utils.WaitHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
