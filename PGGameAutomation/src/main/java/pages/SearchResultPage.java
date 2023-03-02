@@ -24,4 +24,5 @@ public class SearchResultPage {
     public void SelectTransportSection(){
         driver.findElement(transportSectionEl).click();
     }
+
 }

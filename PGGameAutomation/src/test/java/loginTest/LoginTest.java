@@ -1,7 +1,6 @@
 package loginTest;
 
 import base.BaseTest;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.StatmentPage;
@@ -13,7 +12,7 @@ public class LoginTest extends BaseTest {
 
     @Test(priority = 1)
     public void LanguageSelectionTest(){
-        homePage.SelectLanguage();
+        homePage.selectLanguage();
         assertTrue(homePage.ElementIsVisible(),"element is not visible");
     }
 

@@ -1,9 +1,6 @@
 package SearchFieldTest;
 
 import base.BaseTest;
-import io.qameta.allure.Features;
-import io.qameta.allure.Step;
-import net.bytebuddy.build.Plugin;
 import org.testng.annotations.Test;
 import pages.SearchResultPage;
 
@@ -13,7 +10,7 @@ public class TestSearchAutomobil extends BaseTest {
 
     @Test
     public void TestText1() {
-        homePage.SelectLanguage();
+        homePage.selectLanguage();
         homePage.EnterSearchText();
         SearchResultPage searchResultPage = homePage.ClickSearchBtn();
         searchResultPage.SelectTransportSection();

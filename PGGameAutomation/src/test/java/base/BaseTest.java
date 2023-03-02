@@ -41,21 +41,21 @@ public class BaseTest {
         }
         @AfterClass
         public void tearDown(){
-                driver.quit();
+                //driver.quit();
        }
 
         @AfterMethod
         public void recordFailure(ITestResult result){
-                if(ITestResult.FAILURE == result.getStatus())
-                {
-                         TakesScreenshot camera = (TakesScreenshot)driver;
-                        File screenshot = camera.getScreenshotAs(OutputType.FILE);
-                        try{
-                               Files.move(screenshot.toPath(), new File("ressources/screenshots/tests/" + result.getName() + ".png").toPath());
-                        }catch(IOException e){
-                                e.printStackTrace();
-                        }
+            if(ITestResult.FAILURE == result.getStatus())
+            {
+                TakesScreenshot camera = (TakesScreenshot)driver;
+                File screenshot = camera.getScreenshotAs(OutputType.FILE);
+                try{
+                    Files.move(screenshot.toPath(), new File("resources/screenshots/" + result.getName() + ".png").toPath());
+                }catch(IOException e){
+                    e.printStackTrace();
                 }
+            }
         }
 
         public WindowManager getWindowManager(){
