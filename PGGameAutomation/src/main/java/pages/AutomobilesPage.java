@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class AutomobilesPage implements WaitHelper {
-    private WebDriver driver;
+    private final WebDriver driver;
 
     private final By radioBtnPrivate = By.xpath("//input[@id='idcmtype0']");
     private final By radioBtnForSale = By.xpath("//input[@id='idtype0']");
